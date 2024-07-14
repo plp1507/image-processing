@@ -39,7 +39,7 @@ def Dither(filePATH):
             grsclSIMG[i-1][j+1] += quantERROR*3/16
             grsclSIMG[i]  [j+1] += quantERROR*5/16
             grsclSIMG[i+1][j+1] += quantERROR*1/16
-            ditherIMG[i][j]     = newVALUE
+            ditherIMG[i][j]      = newVALUE
 
     return ditherIMG
 
