@@ -1,6 +1,6 @@
 import cv2 as cv
 import numpy as np
-from math import e, pi, floor
+from math import floor
 from matplotlib import pyplot as plt
 
 image = 'image file path'
@@ -46,5 +46,4 @@ def Dither(filePATH):
 finalIMG = Dither(image)
 
 plt.imshow(finalIMG, cmap = 'gray')
-plt.colorbar()
 plt.show()
