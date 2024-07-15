@@ -1,6 +1,6 @@
 import cv2 as cv
 import numpy as np
-from math import e, pi, floor
+from math import floor
 from matplotlib import pyplot as plt
 
 image = 'image file path'
@@ -39,12 +39,11 @@ def Dither(filePATH):
             grsclSIMG[i-1][j+1] += quantERROR*3/16
             grsclSIMG[i]  [j+1] += quantERROR*5/16
             grsclSIMG[i+1][j+1] += quantERROR*1/16
-            ditherIMG[i][j]     = newVALUE
+            ditherIMG[i][j]      = newVALUE
 
     return ditherIMG
 
 finalIMG = Dither(image)
 
 plt.imshow(finalIMG, cmap = 'gray')
-plt.colorbar()
 plt.show()
