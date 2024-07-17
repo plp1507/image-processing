@@ -57,8 +57,7 @@ def Sharpen(imgPATH, beta):
 
     return sharpenedIMG
 
-finalIMG = Sharpen("../../Pictures/Metro_SPB_Avtovo.jpg", 5)
-#finalIMG = Sharpen('''image file path''' ,'''beta''')
+finalIMG = Sharpen('''image file path''' ,'''beta''')
 
 plt.imshow(finalIMG, cmap = "gray")
 plt.colorbar()
